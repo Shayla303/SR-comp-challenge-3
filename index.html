@@ -4,157 +4,198 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Static Comp Challenge 3</title>
-    <!-- <link rel="stylesheet" type="text/css" href="normalize.css"> -->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
   <body>
-  <section class="side-bar">
-  <div class="username">
-   <img class="user-img" src="images/Kaleo.jpg">
-    <h1>Kaleo M. Richard    ▼</h1>
+
+  <!-- // SIDEBAR// -->
+  <section class="side-bar" role = "navigation panel">
+    <div class="username">
+     <img class="user-img"src="images/ShaylaParty.jpeg" alt ="image of a young professional woman">
+    <h1>Shayla R. Richard   ▼</h1>
     </div>
-    <hr class="sidebar-border">
+    <hr class="sidebar-border" role ="navigation panel">
     <h2>Main</h2>
-  <ul style="list-style-type:none">
-  <li><img src="images/home (1).svg">HOME</li>
-  <li><img src="images/jobs (1).svg">JOBS</li>
-  <li><img src="images/resumes.svg">RESUMES</li>
-  <li><img src="images/Tasks.svg">TASKS</li>
-  <li><img src="images/calendar.svg">CALENDAR</li>
-  </ul>
-  <hr class="sidebar-border">
-  <h2>Admin</h2>
-  <ul style="list-style-type:none">
-  <li><img src="images/users.svg">USERS</li>
-  <li><img src="images/location.svg">LOCATIONS</li>
-  <li><img src="images/workflow.svg">WORKFLOWS</li>
-  <li><img src="images/job board.svg">JOB BOARDS</li>
-  <li><img src="images/social.svg">SOCIAL</li>
-  </ul>
-  <hr class="sidebar-border">
+    <ul style="list-style-type:none">
+    <li><img src="images/home (1).svg" alt ="image of a single family home">HOME</li>
+    <li><img src="images/jobs (1).svg" alt =
+      "image of a working man">JOBS</li>
+    <li><img src="images/resumes.svg" alt ="resume icon">RESUMES</li>
+    <li><img src="images/Tasks.svg" alt = " image of a task icon">TASKS</li>
+    <li><img src="images/calendar.svg" alt= "company calendar">CALENDAR</li>
+    </ul>
+    <hr class="sidebar-border" name = "navigation">
+    <h2>Admin</h2>
+    <ul style="list-style-type:none">
+    <li><img src="images/users.svg" role ="administrative users">USERS</li>
+    <li><img src="images/location.svg" role ="locations">LOCATIONS</li>
+    <li><img src="images/workflow.svg">WORKFLOWS</li>
+    <li><img src="images/job board.svg" name=" job listings">JOB BOARDS</li>
+    <li><img src="images/social.svg" name ="for job contacts">SOCIAL</li>
+    </ul>
+    <hr class="sidebar-border" role ="navigation">
+
+
+  <!-- // CHECKBOX AREA// -->
   <h2>Categories</h2>
-  <ul style="list-style-type:none">
-  <li><img src="images/admin box.svg">ADMINISTRATIVE</li>
-  <li><img src="images/design box.svg">DESIGN</li>
-  <li><img src="images/pink box.svg">EXECUTIVE</li>
-  <li><img src="images/HR box.svg">HUMAN RESOURCES</li>
-  </ul>
+    <div class="side-bar-checkbox-area" role ="navigation panel">
+
+      <label class="checkbox">
+        <input type="checkbox" id="administrative">
+        <div class="checkbox-element"></div>
+        Administrative
+      </label>
+
+      <label class="checkbox">
+        <input type="checkbox" id="design">
+        <div class="checkbox-element"></div>
+        Design
+      </label>
+
+      <label class="checkbox">
+        <input type="checkbox" id="executive">
+        <div class="checkbox-element"></div>
+        Executive
+      </label>
+
+      <label class="checkbox">
+        <input type="checkbox" id="human-resources">
+        <div class="checkbox-element"></div>
+        Human Resources
+      </label>
+    </div>
+
   </section>
+  <!-- // END CHECKBOX AREA// -->
+  <!-- //END SIDEBAR//   -->
+
+
+  <!-- //TOP SECTION// -->
   <section class="main-content">
     <header>
     <section class="search-bar">
-    <div class="search-left hamburger"><img src="images/menu icon.svg"></div>
-    <div class="search-left search-icon"><img src="images/search.svg"></div>
-    <input class="search-input" placeholder="Search for a job, task or resume">
-    <div class="search-right profile-plus-icon"><img src="images/gray-users.svg"></div>
-    <div class="search-right calendar-icon"><img src="images/gray-calendar.svg"></div>
-    <div class="search-right grid-icon"><img src="images/misc icon.svg"></div>
+     <div class="search-left hamburger"><img src="images/menu icon.svg" role = "condensed icon"></div>
+     <div class="search-left search-icon"><img src="images/search.svg" alt = "search icon"></div>
+     <input class="search-input" placeholder="Search for a job, task or resume">
+     <div class="search-right profile-plus-icon"><img src="images/gray-users.svg" alt = "icon of a single person to create user profile"></div>
+     <div class="search-right calendar-icon" alt = "click on calendar to schedule interviews"><img src="images/gray-calendar.svg"></div>
+    <div class="search-right grid-icon"><img src="images/misc icon.svg" alt = " search icon to search job openings"></div>
   </section>
     <section class="job-title">
     <div class="job-title-left">
-    <h1> Customer Service Representative</h1>
-    <h3><img src="images/gray-location.svg"> Denver, CO  • <span>Preview this post</span></h3>
+    <h1> Software Developer</h1>
+    <h3><img src="images/gray-location.svg" name = "location icon"> Denver, CO  • <span>Preview this post</span></h3>
     </div>
-      <div class="job-title-right">
-      <div class="open">
-      <div class="open-dot"></div>
-      <h3>Open</h3>
-      </div>
-      <img src="images/gray-ribbon.svg">
-      <img src="images/tinypencil.svg">
-      <img src="images/bank-building.svg">
-      </div>
-      </section>
-      <nav class="nav-links">
-        <a href="#">Summary</a>
-        <a href="#">Applicants</a>
-        <a href="#">Job Board</a>
-        <a href="#">Interviews</a>
-        <a href="#">Activity</a>
-        <a href="#">Broadcast</a>
-        <a href="#">Notifications</a>
-      </nav>
-    </header>
-    <section class="numbers">
-    <section class="stats">
-      <div class="circles">
-      <div class="teal"><h1>3,154 <span>Applicants</span></h1></div>
-      <div class="blue"><h1>1,546 <span>Interviews</span></h1></div>
-      <div class="magenta"><h1>912 <span>Forwards</span></h1></div>
-      <button class="totals">TOTALS - Out of 5,321 views</button>
-      </div>
-      <div class="graph">
-      <img class"graph-image" src="images/bar-chart.png">
-      <button class="applicants">Applicants/Day</button>
-      </div>
-      </section>
-      <section class="page-break">
-      <hr><img src="images/up-button.svg"><hr>
-      </section>
-        <section class="job-description">
-        <div class="job-details">
-        <div class="job-headline">
-        <h1>Job Description</h1>
-        <button class="edit"><img src="images/tinypencil.svg">Edit</button>
-        </div>
-        <table class="table-details">
-        <tr>
-        <td class="title">POSITION TITLE</td>
-        <td class="description">Customer Service Representative</td>
-        </tr>
-        <tr>
-        <td class="title">LOCATION</td>
-        <td class="description">Denver, CO</td>
-        </tr>
-        <tr>
-        <td class="title">EMPLOYMENT TYPE</td>
-        <td class="description">FULL-TIME</td>
-        </tr>
-        <tr>
-        <td class="title">EXPERIENCE</td>
-       <td class="description">MID-LEVEL</td>
-       </tr>
-       <tr>
-       <td class="title">STATUS</td>
-       <td class="description">OPEN</td>
-       </tr>
-       <tr>
-       <td class="title">DESCRIPTION</td>
-       <td class="description">The Customer Service Representative is responsible for interacting with and providing quality assistance to all customers, responsible for keeping up-to-date on the various products like; helping the people,feed the poor,solve all the issues while doing a backhand spring and eating a BLT sandwich.</td>
-        </tr>
-        <tr>
-       <td class="title">HIRING LEAD</td>
-      <td class="description"><img src="images/pooty-tang.jpeg">Pooty Tang</td></tr>
-      <tr>
-      <td class="title">APPROVED SALARY</td>
-      <td class="description"><span>$58,000</span></td>
-      </tr>
-      </table>
-      </div>
-      <section class="social-links">
-      <button class="facebook"><img src="images/facebook-logo.svg">Post to Facebook</button>
-      <button class="twitter"><img src="images/twitter-logo.svg">Tweet this Job</button>
-      <button class="linkedin"><img src="images/linkedin.svg">Post to LinkedIn</button>
-      <div class="link-to-job">
-      <h1><img src="images/internet.svg">Link to this Job</h1>
-      <p>Doggy hizzle namastay. Da bomb gee.Phat burger buns ma nizzle , cool dawg, nunc. Break it down ma nizzle</p>
-      <input class"job-link-input" placeholder="http://getallthejobshomey.com">
-      <button class="copy">Copy</button>
-      </div>
-      <div class="button-widget">
-      <h1><img src="images/widget list.svg">Use the Button Widget</h1>
-      <p>This widget embeds the buttons for sharing the job with others or for submitting a resume on our website.</p>
-      <input class"job-widget" placeholder="Get a Job...FAST">
-      <button class="copy">Copy</button>
-      </div>
-      <div class="resume-upload">
-      <h1><img src="images/upload.svg">Upload Resumes by Email</h1>
-      <p>You can automatically upload multiple resumes to this job by emailing the address below.</p>
-      <input class"job-resume" placeholder="pooty-tang@gmail.com">
-      </div>
-      </section>
-      </section>
-      </section>
+    <div class="job-title-right">
+    <div class="open">
+    <div class="open-dot"></div>
+    <h3>Open</h3>
+    </div>
+    <img src="images/gray-ribbon.svg" role ="access saved jobs here" aria = image clickable>
+    <img src="images/tinypencil.svg" role = "edit job selections" aria = image clickable>
+    <img src="images/bank-building.svg" role = "enter bank information">
+    </div>
     </section>
-  </body>
+    <nav class="nav-links">
+      <a href="#">Summary</a>
+      <a href="#">Applicants</a>
+      <a href="#">Job Board</a>
+      <a href="#">Interviews</a>
+      <a href="#">Activity</a>
+      <a href="#">Broadcast</a>
+      <a href="#">Notifications</a>
+    </nav>
+    </header>
+  <!-- //END TOP SECTION// -->
+
+  <!-- //GRAPH SECTION//   -->
+  <section class="numbers" role ="graph area for statistics of job placements">
+    <section class="stats">
+    <div class="circles">
+    <div class="teal" name = "how many applicants applied to the company"><h1>3,154 <span>Applicants</span></h1></div>
+    <div class="blue" name = "how many interviews conducted"><h1>1,546 <span>Interviews</span></h1></div>
+    <div class="magenta" name = " how many resumes forwarded to managers"><h1>912 <span>Forwards</span></h1></div>
+    <button class="totals" name ="total applicants hired this year">TOTALS - Out of 5,321 views</button>
+     </div>
+    <div class="graph">
+    <img class"graph-image" src="images/bar-chart.png" alt = " graph image of statistics displayed in charts">
+    <button class="applicants">Applicants/Day</button>      </div>
+    </section>
+    <section class="page-break">
+    <hr><img src="images/up-button.svg" role ="naviation back to the top of the page"><hr>
+  </section>
+  <!-- //END GRAPH SECTION//   -->
+
+  <!-- //  JOB DESCRIPTION TABLE// -->
+    <section class="job-description">
+    <div class="job-details">
+    <div class="job-headline">
+    <h1>Job Description</h1>
+    <button class="edit"><img src="images/tinypencil.svg">Edit</button>
+      </div>
+    <table class="table-details">
+    <tr>
+    <td class="title">POSITION TITLE</td>
+    <td class="description">Customer Service Representative</td>
+    </tr>
+    <tr>
+    <td class="title">LOCATION</td>
+    <td class="description">Denver, CO</td>
+    </tr>
+    <tr>
+    <td class="title">EMPLOYMENT TYPE</td>
+    <td class="description">FULL-TIME</td>
+    </tr>
+    <tr>
+    <td class="title">EXPERIENCE</td>
+    <td class="description">MID-LEVEL</td>
+    </tr>
+    <tr>
+    <td class="title">STATUS</td>
+    <td class="description">OPEN</td>
+    </tr>
+    <tr>
+    <td class="title">DESCRIPTION</td>
+    <td class="description" alt="description of the open position">The Customer Service Representative is responsible for interacting with and providing quality assistance to all customers, responsible for keeping up-to-date on the various products like; helping the people,feed the poor,solve all the issues while doing a backhand spring and eating a BLT sandwich.</td>
+    </tr>
+    <tr>
+    <td class="title">HIRING LEAD</td>
+    <td class="description"><img src="images/Kaleo8.jpg">Kaleo M. Richard</td></tr>
+    <tr>
+    <td class="title">APPROVED SALARY</td>
+    <td class="description"><span>$80,000</span></td>
+    </tr>
+    </table>
+    </div>
+  </section>
+  <!-- //END JOB DESCRIPTION TABLE// -->
+
+
+  <!-- //SOCIAL MEDIA AREA// -->
+  <section class="social-links">
+    <button class="facebook"><img src="images/facebook-logo.svg">Post to Facebook</button>
+    <button class="twitter"><img src="images/twitter-logo.svg">Tweet this Job</button>
+    <button class="linkedin"><img src="images/linkedin.svg">Post to LinkedIn</button>
+    <div class="link-to-job">
+    <h1><img src="images/internet.svg">Link to this Job</h1>
+    <p>Doggy hizzle namastay. Da bomb gee.Phat burger buns ma nizzle , cool dawg, nunc. Break it down ma nizzle</p>
+    <input class"job-link-input" placeholder="http://getthatmoneyfam.com">
+    <button class="copy">Copy</button>
+    </div>
+    <div class="button-widget">
+    <h1><img src="images/widget list.svg">Use the Button Widget</h1>
+    <p>This widget embeds the buttons for sharing the job with others or for submitting a resume on our website.</p>
+    <input class"job-widget" placeholder="Get a Job...FAST">
+    <button class="copy">Copy</button>
+    </div>
+    <div class="resume-upload">
+    <h1><img src="images/upload.svg">Upload Resumes by Email</h1>
+    <p>You can automatically upload multiple resumes to this job by emailing the address below.</p>
+    <input class"job-resume" placeholder="AllMy$$NOW@gmail.com">
+    </div>
+  </section>
+</body>
 </html>
+  <!-- //END SOCIAL MEDIA AREA// -->

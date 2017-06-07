@@ -9,7 +9,6 @@
 		font-size:12px;
 	  margin: 0;
 	  padding: 0;
-
 	}
 
 	.side-bar {
@@ -302,9 +301,6 @@
 	  border-left-color: #ac65b1;
 	}
 
-	.totals {
-
-	}
 
 	.graph {
 	  text-align: center;
@@ -514,7 +510,7 @@
 	}
 
 
-	@media screen and (max-width: 1100px) {
+	@media screen and (max-width: 1200px) {
 	  .side-bar {
 	    display:none
 	  }
@@ -572,6 +568,11 @@
 	    width: 60%;
 	  }
 
+		.copy {
+	    width: 18%;
+	  }
+
+
 	  .graph {
 	    width: 60%;
 	  }
@@ -582,10 +583,6 @@
 
 	  .social-links div input {
 	    width: 75%;
-	  }
-
-	  .copy {
-	    width: 18%;
 	  }
 
 	  .social-links div {
@@ -599,7 +596,6 @@
 	  .social-links button img {
 	    margin: 0px 45px 0px 10px;
 	  }
-	}
 
 	@media screen and (max-width: 775px) {
 	  .nav-links {
@@ -608,6 +604,10 @@
 
 	  .circles {
 	    width: 75%;
+	  }
+
+		.copy {
+	    width: 20%;
 	  }
 
 	  .graph img {
@@ -661,14 +661,10 @@
 	    margin-top: 6px;
 	  }
 
-	  .copy {
-	    width: 20%;
-	  }
-
 	  .social-links button img {
 	    margin: 0px 235px 0px 10px;
 	  }
-	}
+
 
 	@media screen and (max-width: 550px) {
 	  .search-input {
@@ -693,6 +689,10 @@
 	    flex-direction: column;
 	  }
 
+		.copy {
+	    width: 30%;
+	  }
+
 	  .graph img {
 	    width: 325px;
 	  }
@@ -712,10 +712,6 @@
 	    margin: 10px 5px;
 	  }
 
-	  .copy {
-	    width: 30%;
-	  }
-
 	  .social-links button img {
 	    margin: 0px 160px 0px 10px;
 	  }
@@ -723,7 +719,7 @@
 	  .social-links div input {
 	    width: 60%;
 	  }
-	}
+
 
 	@media screen and (max-width: 400px) {
 	  .graph img {
@@ -735,7 +731,7 @@
 	    width: 90%;
 	  }
 
-	  .description {
+	  .descript ion {
 	    padding: 0 5px 20px 0;
 	  }
 
@@ -751,7 +747,6 @@
 	  .social-links div input {
 	    width: 65%;
 	  }
-	}
 
 	@media screen and (max-width: 320px) {
 	  .graph img {
