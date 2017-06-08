@@ -7,4 +7,4 @@ Below is an example of the original comp
 
 Below is my rendition
 
-<img src=images/StaticComp3.png" />
+<img src= "images/StaticComp3.png" />
