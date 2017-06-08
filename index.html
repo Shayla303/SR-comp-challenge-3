@@ -6,7 +6,7 @@
     <title>Static Comp Challenge 3</title>
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat  rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat"  rel="stylesheet">
   </head>
   <body>
 
@@ -16,60 +16,47 @@
      <img class="user-img"src="images/ShaylaParty.jpeg" alt ="image of a young professional woman">
     <h1>Shayla R. Richard   ▼</h1>
     </div>
-    <hr class="sidebar-border" role ="navigation panel">
+    <hr class="sidebar-border">
     <h2>Main</h2>
-    <ul style="list-style-type:none">
-    <li><img src="images/home (1).svg" alt ="image of a single family home">HOME</li>
-    <li><img src="images/jobs (1).svg" alt =
+    <ul class = "main" style="list-style-type:none">
+     <li><img src="images/home (1).svg" alt ="image of a single family home">HOME</li>
+     <li><img src="images/jobs (1).svg" alt =
       "image of a working man">JOBS</li>
-    <li><img src="images/resumes.svg" alt ="resume icon">RESUMES</li>
-    <li><img src="images/Tasks.svg" alt = " image of a task icon">TASKS</li>
-    <li><img src="images/calendar.svg" alt= "company calendar">CALENDAR</li>
+     <li><img src="images/resumes.svg" alt ="resume icon">RESUMES</li>
+     <li><img src="images/Tasks.svg" alt = " image of a task icon">TASKS</li>
+     <li><img src="images/calendar.svg" alt= "company calendar">CALENDAR</li>
     </ul>
-    <hr class="sidebar-border" name = "navigation">
+    <hr class="sidebar-border">
     <h2>Admin</h2>
-    <ul style="list-style-type:none">
-    <li><img src="images/users.svg" role ="administrative users">USERS</li>
-    <li><img src="images/location.svg" role ="locations">LOCATIONS</li>
-    <li><img src="images/workflow.svg">WORKFLOWS</li>
-    <li><img src="images/job board.svg" name=" job listings">JOB BOARDS</li>
-    <li><img src="images/social.svg" name ="for job contacts">SOCIAL</li>
+    <ul class = "admin-users" style="list-style-type:none">
+     <li><img src="images/users.svg" role ="administrative users">USERS</li>
+     <li><img src="images/location.svg" role ="locations">LOCATIONS</li>
+     <li><img src="images/workflow.svg">WORKFLOWS</li>
+     <li><img src="images/job board.svg" name=" job listings">JOB BOARDS</li>
+     <li><img src="images/social.svg" name ="for job contacts">SOCIAL</li>
     </ul>
     <hr class="sidebar-border" role ="navigation">
+  <!-- //END SIDEBAR//   -->
 
 
   <!-- // CHECKBOX AREA// -->
   <h2>Categories</h2>
-    <div class="side-bar-checkbox-area" role ="navigation panel">
-
-      <label class="checkbox">
-        <input type="checkbox" id="administrative">
-        <div class="checkbox-element"></div>
-        Administrative
-      </label>
-
-      <label class="checkbox">
-        <input type="checkbox" id="design">
-        <div class="checkbox-element"></div>
-        Design
-      </label>
-
-      <label class="checkbox">
-        <input type="checkbox" id="executive">
-        <div class="checkbox-element"></div>
-        Executive
-      </label>
-
-      <label class="checkbox">
-        <input type="checkbox" id="human-resources">
-        <div class="checkbox-element"></div>
-        Human Resources
-      </label>
-    </div>
+   <div class="side-bar-checkbox-area" role ="navigation panel">
+    <form class="" action="index.html" method="post">
+     <a href="#" class="categories-links-text" >
+      <input type="checkbox" name="" value="" class="checkbox-sizing"id="yellow-checkbox"></a>
+      <p id = "admin">Administrative</p>
+     <a href="#" class="categories-links-text"><input type="checkbox" name="" value=""class="checkbox-sizing" id="blue-checkbox"></a>
+     <p id = "design">Design</p>
+     <a href="#" class="categories-links-text" ><input type="checkbox" name="" value="" class="checkbox-sizing" id="magenta-checkbox"></a>
+     <p id = "exec">Executive</p>
+     <a href="#" class="categories-links-text"><input type="checkbox" name="" value="" class="checkbox-sizing" id="green-checkbox"></a>
+     <div id ="hr-text">Human Resources</div>
+    </form>
+   </div>
 
   </section>
   <!-- // END CHECKBOX AREA// -->
-  <!-- //END SIDEBAR//   -->
 
 
   <!-- //TOP SECTION// -->
@@ -129,7 +116,7 @@
   <!-- //END GRAPH SECTION//   -->
 
   <!-- //  JOB DESCRIPTION TABLE// -->
-    <section class="job-description">
+  <section class="job-description">
     <div class="job-details">
     <div class="job-headline">
     <h1>Job Description</h1>
@@ -138,7 +125,7 @@
     <table class="table-details">
     <tr>
     <td class="title">POSITION TITLE</td>
-    <td class="description">Customer Service Representative</td>
+    <td id="position-title">Software Developer</td>
     </tr>
     <tr>
     <td class="title">LOCATION</td>
@@ -158,11 +145,11 @@
     </tr>
     <tr>
     <td class="title">DESCRIPTION</td>
-    <td class="description" alt="description of the open position">The Customer Service Representative is responsible for interacting with and providing quality assistance to all customers, responsible for keeping up-to-date on the various products like; helping the people,feed the poor,solve all the issues while doing a backhand spring and eating a BLT sandwich.</td>
+    <td class="description" alt="description of the open position">The Software Developer is responsible for interacting with and providing all the front end things to all customers, responsible for all the CSS,JS,HTML things;feed the poor,solve all the issues while doing a backhand spring and eating a BLT sandwich.</td>
     </tr>
     <tr>
     <td class="title">HIRING LEAD</td>
-    <td class="description"><img src="images/Kaleo8.jpg">Kaleo M. Richard</td></tr>
+    <td class="description"><img src="images/Kaleo8.jpg"><div id ="hiring-mgr">Kaleo M. Richard</div></td></tr>
     <tr>
     <td class="title">APPROVED SALARY</td>
     <td class="description"><span>$80,000</span></td>
@@ -180,7 +167,7 @@
     <button class="linkedin"><img src="images/linkedin.svg">Post to LinkedIn</button>
     <div class="link-to-job">
     <h1><img src="images/internet.svg">Link to this Job</h1>
-    <p>Doggy hizzle namastay. Da bomb gee.Phat burger buns ma nizzle , cool dawg, nunc. Break it down ma nizzle</p>
+    <p>Doggy hizzle namastay. Da bomb gee.Phat burger buns ma nizzle , cool dawg. Sign your pitty on the runny kine.</p>
     <input class"job-link-input" placeholder="http://getthatmoneyfam.com">
     <button class="copy">Copy</button>
     </div>

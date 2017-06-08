@@ -11,13 +11,22 @@ body {
   width: 100%;
 }
 
+.main-content {
+ float: right;
+ width: 87%;
+}
+
+/*//SIDEBAR//*/
+
+
 .side-bar {
   background-color: #354052;
   color: #aeb3ba;
   float: left;
-  height: 1520px;
+  height: 197vh;
   width: 13%;
 }
+
 
 .sidebar-border {
   border: 1px solid black;
@@ -30,75 +39,107 @@ body {
 .username h1 {
   font-size: 14px;
   margin: 10px 0 25px 0;
+  padding-bottom: 5px;
+  padding-top: 3px;
 }
 
 .user-img {
   border-radius: 80px;
   height: 85px;
-  margin-top: 20px;
+  margin-top: 30px;
   width: 85px;
 }
 
 .side-bar h2 {
   color: #5c677d;
-  font-size: 13px;
-  padding: 5px 0 0px 12px;
+  font-size: 14px;
+  padding: 15px 4px 11px 17px;
 }
 
+.main, .admin-users {
+padding-bottom: 8px;
+}
+
+li {
+  margin-left: -22px;
+  padding-bottom: 23px;
+  }
+
 .side-bar-checkbox-area {
-  padding-left: 54px;
+  padding-left: 30px;
   width: 100%;
   height: 250px;;
 }
 
-.checkbox {
-  position: relative;
-  display: block;
-  min-width: 140px;
-  padding: 15px 0;
-}
-
-.checkbox input:checked ~ .checkbox-element::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 5px;
-  width: 5px;
-  height: 8px;
-  transform: rotate(45deg);
-  border: solid #354052;
-  border-width: 0 2px 2px 0;
-}
-
-.checkbox input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-
-.checkbox-element {
-  position: absolute;
-  left: -28px;
-  top: 13px;
-  width: 15px;
+.checkbox-sizing {
+  -webkit-appearance: none;
   height: 15px;
-  border-radius: 3px;
+  width: 15px;
+  position: relative;
+  top: 5px;
+  right: 8px;
 }
-.checkbox-element:hover {
-  cursor: pointer;
+.checkbox-sizing:active,
+.checkbox-sizing:checked:active {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
 }
 
-.checkbox-element#admin {
+.checkbox-sizing:checked {
+  background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.checkbox-sizing:checked:after {
+  content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: -2px;
+	left: 1px;
+	color: #000;
+}
+
+#yellow-checkbox {
   background-color: #ffda44;
 }
-.checkbox-element#design {
+
+#admin {
+  margin-bottom: 5px;
+  margin-left: 18px;
+  margin-top: -11px;
+  padding-bottom: 20px;
+  padding-right: 45px;
+}
+
+#blue-checkbox {
   background-color: #006df0;
 }
-.checkbox-element#executive {
+
+#design, #admin, #exec,#hr {
+  margin-bottom: 5px;
+  margin-left: 18px;
+  margin-top: -11px;
+  padding-bottom: 20px;
+  padding-right: 45px;
+}
+
+#hr-text{
+  display:inline-block;
+  margin-bottom: 5px;
+  margin-right: -11px;
+  margin-left: -3px;
+  margin-top: -11px;
+  padding-bottom: 20px;
+  padding-right: 45px;
+  }
+
+#magenta-checkbox {
   background-color: #ea0863;
 }
-.checkbox-element#human-resources   {
-  background-color: #088a24;
+
+#green-checkbox {
+  background-color: #06b495;
 }
 
 .side-bar li:hover {
@@ -112,11 +153,8 @@ body {
   width: 15px;
 }
 
-.main-content {
-  float: right;
-  width: 87%;
-}
 
+/*//SEARCH BAR//*/
 
 .search-bar {
   border-bottom: 1px solid #aeb3ba;
@@ -196,10 +234,10 @@ body {
 
 .job-title img:first-child {
   border: none;
-  height: 12px;
+  height: 15px;
   margin: 0;
   padding: 0;
-  width: 12px;
+  width: 15px;
 }
 
 .job-title-left {
@@ -242,7 +280,7 @@ body {
 
 .nav-links {
   float: left;
-  margin: 10px 40px;
+  margin: -10px 40px;
   width: 100%;
 }
 
@@ -266,15 +304,17 @@ body {
   border-bottom: 2px solid #15a2f6;
 }
 
+/*//STATS AREA//*/
 .numbers {
   background-color: #edf2f6;
   border-top: 2px solid #e5e9ed;
   float: right;
-  margin-top: 5px;
-  min-height: 156vh;
+  margin-top: 33px;
+  min-height: 165vh;
   width: 100%;
 }
 
+/*//GRAPHS//*/
 .stats {
   display: flex;
   margin-top: 15px;
@@ -285,12 +325,13 @@ body {
 .stats button {
   background-color: #ffffff;
   border: 2px solid #aeb3ba;
-  border-radius: 20px;
+  border-radius: 24px;
   color: #4e565d;
   cursor: pointer;
   font-weight: 700;
-  height: 25px;
-  padding: 5px 10px 5px 10px;
+  height: 27px;
+  padding: 7px 12px 7px 12px;
+  position: relative;
 }
 
 .circles {
@@ -307,11 +348,13 @@ body {
   color: #4e565d;
   font-size: 32px;
   font-weight: 700;
+  padding-bottom: -2px;
 }
 
 .circles span {
   font-size: 12px;
   text-transform: uppercase;
+  padding-bottom: 5px;
 }
 
 .teal, .blue, .magenta {
@@ -319,11 +362,11 @@ body {
   border-radius: 150px;
   color: #4e565d;
   display: flex;
-  height: 125px;
+  height: 147px;
   justify-content: center;
   margin: 30px 30px;
   text-align: center;
-  width: 125px;
+  width: 147px;
 }
 
 .teal span, .blue span, .magenta span {
@@ -363,21 +406,23 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 98%;
 }
 
 .page-break img {
-  background-color: #ffffff;
-  border: 1px solid #aeb3ba;
   border-radius: 30px;
-  height: 30px;
+  height: 45px;
   padding: 5px;
-  width: 30px;
+  width: 45px;
 }
 
 .page-break hr {
-  width: 42%;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/*// TABLE //*/
 
 .job-details {
   background-color: #ffffff;
@@ -422,14 +467,14 @@ body {
 }
 
  .table-details tr {
-  /*border-bottom: : 2px solid #aeb3ba;*/
+  border-bottom: : 2px solid #aeb3ba;
 }
 
-.table-details tr:last-child {
+.table-details th,tr:last-child {
   border-bottom: none;
 }
 
-.table-details tr:first-child{
+.table-details th,tr:first-child{
   border-top: none;
 }
 
@@ -444,10 +489,17 @@ body {
 .description {
   border-top: 1px solid #aeb3ba;
   color: #aeb3ba;
+  padding-bottom: 10px;
+  padding-right: 100px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+#position-title{
+  color: #aeb3ba;
   padding-bottom: 8px;
   padding-right: 100px;
   width: 100%;
-
 }
 
 .description span {
@@ -459,7 +511,17 @@ body {
   height: 50px;
   margin-right: 15px;
   width: 50px;
+  float:left;
 }
+
+#hiring-mgr{
+  float: right;
+  margin-right: 300px;
+  padding-top: 19px;
+  position: relative;
+}
+
+/*//SOCIAL MEDIA//*/
 
 .social-links {
   display: flex;
@@ -506,7 +568,7 @@ body {
 }
 
 .social-links div {
-  margin: 0px 0 0px 0;
+  margin: 8px 2px 2px 0px;
 }
 
 .link-to-job, .button-widget {
@@ -518,7 +580,7 @@ body {
   background-color: #3b5998;
   display: flex;
   justify-content: flex-start;
-  width: 100%;
+  width: 95%;
 }
 
 .twitter {
@@ -526,7 +588,7 @@ body {
   background-color: #50abf1;
   display: flex;
   justify-content: flex-start;
-  width: 100%;
+  width: 95%;
 }
 
 .linkedin {
@@ -534,7 +596,7 @@ body {
   background-color: #007ab9;
   display: flex;
   justify-content: flex-start;
-  width: 100%;
+  width: 95%;
 }
 
 .copy {
@@ -553,6 +615,8 @@ body {
   width: 100%;
 }
 
+
+/*//MEDIA QUERIES//*/
 
 @media screen and (max-width: 1100px) {
   .side-bar {
@@ -613,11 +677,15 @@ body {
   }
 
   .graph {
-    width: 60%;
+    width: 70%;
   }
 
   .graph img {
     width: 550px;
+  }
+
+  .job-description {
+    position:absolute;
   }
 
   .social-links div input {
@@ -766,10 +834,10 @@ body {
 }
 
 @media screen and (max-width: 400px) {
-  .graph img {
+  /*.graph img {
     width: 250px;
   }
-
+*/
   .job-details {
     margin: 20px 20px;
     width: 90%;
@@ -795,7 +863,7 @@ body {
 
 @media screen and (max-width: 320px) {
   .graph img {
-    width: 200px;
+    display: none;
   }
 
   .title {
